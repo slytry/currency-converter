@@ -1,0 +1,13 @@
+.root {
+  width: max(100%, 600px);
+}
+
+.main {
+
+  background-color: violet;
+
+}
+
+.footer {
+  padding: 6rem 3rem 3rem;
+}

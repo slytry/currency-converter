@@ -1,0 +1,16 @@
+.quote {
+    position: relative;
+    margin: auto;
+    background-color: #FF8630;
+}
+
+.quote::before {
+    content: "“";
+    position: absolute;
+    left: 5rem;
+    top: 5rem;
+    font-family: sans-serif;
+    color: #FFFFFF;
+    font-size: 6rem;
+    font-weight: bold;
+}
