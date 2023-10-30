@@ -17,13 +17,10 @@ module.exports = {
       { allowConstantExport: true },
     ],
   },
-  "overrides": [
+  overrides: [
     {
-      "files": [
-        "./src/__tests__/**",
-        "./src/**/*.test.[jt]s?(x)"
-      ],
-      "extends": ["plugin:jest/recommended"],
+      files: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],
+      extends: ["plugin:jest/recommended", "plugin:jest-dom/recommended", 'plugin:testing-library/react'],
     },
   ],
 }

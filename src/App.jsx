@@ -1,5 +1,5 @@
 import style from './App.module.css'
-import { Quote } from './componets/quote/Quotev'
+import { Quote } from './componets/quote'
 
 function App() {
 

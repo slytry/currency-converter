@@ -1,0 +1,28 @@
+.root {
+    position: relative;
+    background-color: #FF8630;
+    padding: 3rem 2rem 2rem;
+    text-align: end;
+    width: fit-content;
+}
+
+
+.root::before {
+    content: "“";
+    position: absolute;
+    left: 1.5rem;
+    top: 0.8rem;
+    font-family: sans-serif;
+    color: #FFFFFF;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.blockquote {
+    font-size: 1.2rem;
+}
+
+.cite {
+    font-size: 0.8rem;
+
+}

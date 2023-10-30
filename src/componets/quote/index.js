@@ -1,1 +1,1 @@
-export { Quote } from './Quotev'
+export { Quote } from './Quote'
