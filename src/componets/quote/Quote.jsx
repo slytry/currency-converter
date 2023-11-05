@@ -1,8 +1,12 @@
+/* eslint-disable react/prop-types */
 import { quotes } from "./config"
+import {composeRandomQuote  } from "./compose-random-quote"
 import styles from "./Quote.module.css"
 
-export const Quote = () => {
-    const { text, author } = quotes[0]
+const defaultQuote = composeRandomQuote(quotes)
+
+export const Quote = ({quote = defaultQuote}) => {
+    const { text, author } = quote
 
     return (
         <div className={styles.root}>

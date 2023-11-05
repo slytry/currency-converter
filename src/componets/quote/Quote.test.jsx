@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 
 import { render, screen } from '@testing-library/react'
 import { quotes } from './config';
@@ -8,25 +9,25 @@ describe('When quote rendered', () => {
     const quoteStub = quotes[0];
     const { text, author } = quoteStub;
 
-    it('should contain an expexted text', () => {
+    it('should contain an expected text', () => {
         // Arrange
-        render(<Quote />)
+        render(<Quote quote={quoteStub} />)
 
         // Act
         const result = screen.getByText(new RegExp(text))
-        // Assert
 
+        // Assert
         expect(result).toBeInTheDocument();
     });
 
     it('should contain an expexted author', () => {
         // Arrange
-        render(<Quote />)
+        render(<Quote quote={quoteStub}/>)
 
         // Act
         const result = screen.getByText(new RegExp(author))
+        
         // Assert
-
         expect(result).toBeInTheDocument();
     });
 });
