@@ -1,0 +1,13 @@
+.root {
+    display: flex;
+    gap: 2rem;
+}
+
+.root :where(span, input) {
+    display: block;
+}
+
+.root label {
+    display: grid;
+    gap: 1rem;
+}

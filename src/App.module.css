@@ -1,13 +1,14 @@
 .root {
-  width: max(100%, 600px);
+  display: grid;
+  justify-content: center;
+  gap: 2rem;
+  margin-inline: 3vw;
+  margin-block: 6vh;
+  background-color: lightgoldenrodyellow;
 }
 
-.main {
-
-  background-color: violet;
-
-}
+.main {}
 
 .footer {
-  padding: 6rem 3rem 3rem;
+  justify-self: end;
 }

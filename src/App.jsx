@@ -1,5 +1,6 @@
 import style from './App.module.css'
-import { Quote } from './componets/quote'
+import { Converter } from './components/converter'
+import { Quote } from './components/quote'
 
 function App() {
 
@@ -9,13 +10,10 @@ function App() {
         <h1>Заголовок</h1>
       </header>
       <main className={style.main}>
-        <p>vfqy</p>
-
-
+        <Converter/>
       </main>
       <footer className={style.footer}>
         <Quote />
-
       </footer>
     </div>
   )

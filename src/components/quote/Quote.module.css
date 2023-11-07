@@ -1,20 +1,16 @@
 .root {
     position: relative;
-    background-color: #FF8630;
-    padding: 3rem 2rem 2rem;
-    text-align: end;
-    width: fit-content;
+    padding: 1.3rem 1rem 1rem;
 }
 
 
 .root::before {
     content: "“";
     position: absolute;
-    left: 1.5rem;
-    top: 0.8rem;
+    left: 1rem;
+    top: 0.1rem;
     font-family: sans-serif;
-    color: #FFFFFF;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: bold;
 }
 
